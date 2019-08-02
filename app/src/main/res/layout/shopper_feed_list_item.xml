@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:weightSum="8"
+              android:background="@drawable/edittext_style">
+    
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_weight="2"
+                  android:background="@drawable/edittext_style"
+                  android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:weightSum="10"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="10"
+                       android:id="@+id/iv_post_header"/>
+            <!--<Button android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_post_options"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_info"/>-->
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_margin="10dp"
+                  android:layout_weight="4"
+                  android:weightSum="3">
+        
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/iv_post"
+                   android:textColor="@color/black"/>
+    
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_margin="10dp"
+                  android:layout_weight="2"
+                  android:weightSum="2"
+                  android:orientation="horizontal">
+        
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/edittext_style"
+                      android:layout_margin="5dp"
+                      android:layout_weight="1">
+            <Button android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_post_like"
+                    android:text="@string/like"
+                    android:background="@drawable/edittext_style"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/edittext_style"
+                      android:layout_margin="5dp"
+                      android:layout_weight="1">
+            <Button android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_post_share"
+                    android:text="@string/share"
+                    android:background="@drawable/edittext_style"
+            />
+        </LinearLayout>
+    
+    
+    </LinearLayout>
+
+
+</LinearLayout>

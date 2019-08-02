@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    
+    
+    <ImageView android:layout_width="150dp"
+               android:layout_centerHorizontal="true"
+               android:layout_height="150dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginRight="40dp"
+               android:layout_marginTop="50dp"
+               android:layout_marginBottom="20dp"
+               android:id="@+id/iv_singin_landing"
+               android:background="@drawable/edittext_style"
+    />
+    
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_message"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginBottom="30dp"
+              android:text="@string/message_signin_landing"
+              android:textSize="20sp"
+              android:gravity="center"
+              android:layout_centerInParent="true"
+              android:layout_below="@+id/iv_singin_landing"
+    />
+    
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signin_shopper"
+            android:layout_below="@+id/tv_message"
+            android:layout_marginBottom="20dp"
+            android:text="@string/shopper"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/edittext_style"
+    />
+    
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signin_seller"
+            android:layout_below="@+id/btn_signin_shopper"
+            android:text="@string/seller"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/edittext_style"
+    />
+
+
+</RelativeLayout>
